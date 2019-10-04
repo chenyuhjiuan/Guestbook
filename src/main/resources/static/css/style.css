@@ -1,0 +1,162 @@
+
+body {
+    margin-top: 50px;
+}
+body{
+    background: #e6e6ff;
+}
+
+.container {
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.jumbotron {
+    margin-left: 300px;
+    margin-top: 30px;
+}
+/*.images{
+    margin-left: 300px;
+    margin-top: 30px;
+    height: 200px;
+    width: 1100px;
+}*/
+.nav-link{
+    font-size: 30px;
+
+}
+.pcss{
+    margin-left: 300px;
+    font-size: 22px;
+    width: 1100px;
+    color: black;
+}
+.pcss1{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+h1{
+    color:#990033;
+    font-family: 'Notable', sans-serif;
+    margin-left: 300px;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+}
+
+li{
+    margin-right: 80px;
+}
+
+nav {
+    margin-left: 300px;
+    margin-right: 450px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+span{
+    color:saddlebrown;
+}
+
+.row{
+    box-shadow:  0 0 7px 5px #4B4B4B;
+    margin: 15px auto;
+    padding: 0;
+    background-color: #FFFFB2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/*footer with social media icons*/
+*{
+    margin:0px;
+    padding: 0px;
+    box-siaing: border-box;
+}
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    /*margin: auto;*/
+    margin-bottom: 50px;
+    background: #272727;
+    padding: 30px 0px;
+
+}
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-social-icons ul{
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    font-size: larger;
+    margin:0px 10px;
+    border-radius:100% ;
+    background:#ffcccc;
+}
+.footer-social-icons ul li a{
+    color:#272727;
+    font-size: 25px;
+}
+.footer-social-icons ul li a i{
+    line-height:50px;
+}
+.oval {
+    width: 160px;
+    height: 80px;
+    background: #a84909;
+    border-radius: 50%;
+}
+/*section and aside for author.html*/
+section {
+    width: 645px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+
+
+
+.pcss1{
+    margin-left: 100px;
+    font-size: 24px;
+    width: 600px;
+}
+/*paragraph content for each entry page*/
+
+.pcss2{
+    margin-left: 300px;
+    font-size: 24px;
+    width: 900px;
+}
+
+
+aside {
+    width: 350px;
+    float: left;
+    padding-left: 25px;
+    margin-left: 25px;
+}
+
+/* the styles for the footer */
+
+footer {
+    clear: both;
+    padding-top: 1em;
+
+}
+footer p {
+    font-size: 80%;
+
+    margin-left: 25px;
+    padding-bottom: 1em;
+}

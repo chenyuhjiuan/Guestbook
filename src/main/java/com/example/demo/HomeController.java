@@ -29,7 +29,7 @@ public class HomeController {
     }
 
     @GetMapping("/add")
-    public String dishForm(Model model){
+    public String postForm(Model model){
         model.addAttribute("post",new Post());
 
 	return "postform";
@@ -43,6 +43,11 @@ public class HomeController {
         postRepository.save(post);
         return "redirect:/";
     }
+    @RequestMapping("/searchprocess")
+    public String search( @RequestParam("name") String name, Model model){
+        model.addAttribute("post",postRepository.findByName(name));
+        return "searchresult";
+    }
 
     @RequestMapping("/detail/{id}")
     public String showPost(@PathVariable("id") long id, Model model){
@@ -50,6 +55,7 @@ public class HomeController {
         return "show";
 
     }
+
     @RequestMapping("/update/{id}")
     public String updateDish(@PathVariable("id") long id, Model model){
         model.addAttribute("post", postRepository.findById(id).get());
