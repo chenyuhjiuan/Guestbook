@@ -16,12 +16,20 @@ public class HomeController {
     public String loadFormPage(){
         return "login";
     }
-    @RequestMapping("/postform")
-    public String loginPage(@RequestParam("login") String login, Model model){
+
+    @RequestMapping("/loginprocess")
+    public String loginprocess(@RequestParam("login") String login, Model model){
         model.addAttribute("loginval", login);
-        model.addAttribute("post", new Post());
-        return "postform";
-    }
+        return "home";}
+    @RequestMapping("/home1")
+    public String home(){return "home";}
+
+    @RequestMapping("/processpostform")
+    public String postform(){return "postform";}
+
+    @RequestMapping("/search")
+    public String search(){return "search";}
+
     @RequestMapping("/")
     public String listPosts(Model model){
         model.addAttribute("posts", postRepository.findAll());
@@ -45,7 +53,8 @@ public class HomeController {
     }
     @RequestMapping("/searchprocess")
     public String search( @RequestParam("name") String name, Model model){
-        model.addAttribute("post",postRepository.findByName(name));
+        model.addAttribute("posts",postRepository.findByName(name));
+
         return "searchresult";
     }
 

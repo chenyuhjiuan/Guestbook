@@ -23,7 +23,7 @@ public class Post {
     @Size(min=3,max=80)
     private String subject;
 
-    @Size(min=20)
+    @Size(min=10)
     private String wish;
     public Post() {
     }

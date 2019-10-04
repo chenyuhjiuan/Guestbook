@@ -34,14 +34,6 @@ body{
     font-family: 'Playfair Display', serif;
     font-size: 20px;
 }
-h1{
-    color:#990033;
-    font-family: 'Notable', sans-serif;
-    margin-left: 300px;
-}
-h2{
-    font-family: 'Playfair Display', serif;
-}
 
 li{
     margin-right: 80px;
@@ -63,8 +55,9 @@ span{
 .row{
     box-shadow:  0 0 7px 5px #4B4B4B;
     margin: 15px auto;
+
     padding: 0;
-    background-color: #FFFFB2;
+    background-color: pink;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -159,4 +152,8 @@ footer p {
 
     margin-left: 25px;
     padding-bottom: 1em;
+}
+.inputp{
+    margin-left: 40px;
+    color:darkred;
 }
