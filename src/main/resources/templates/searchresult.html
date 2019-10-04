@@ -52,10 +52,11 @@ font-family: 'Patua One', cursive;">Welcome to Emily's Website</h1>
         <h3>This is your search result.</h3>
         <div   th:object="${post}">
 
-                <div
+                <div    th:if="${post.name}"
                         th:each="post : ${posts}"
                         th:value="${post.name}"
                         th:text="${post.name}+' : '+${post.subject}"></div>
+
 
         </div>
 
