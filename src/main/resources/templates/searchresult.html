@@ -39,7 +39,7 @@ font-family: 'Patua One', cursive;">Welcome to Emily's Website</h1>
                 <div    th:if="${post.name}"
                         th:each="post : ${posts}"
                         th:value="${post.name}"
-                        th:text="${post.name}+' : '+${post.subject}+'. Wish content : '+${post.wish}">
+                        th:text="${post.date}+' _ '+${post.name}+' : '+${post.subject}+'. Wish content : '+${post.wish}">
 
                 </div>
 
