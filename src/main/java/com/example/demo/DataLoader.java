@@ -45,7 +45,7 @@ public class DataLoader implements CommandLineRunner {
         post=new Post ("Ip, Regina","2019-08-23","Have you ever traveled by yourself?","People who have never traveled alone often describe their first solo trip as an almost religious experience. Traveling alone gives you the chance to indulge yourself fully.");
         postRepository.save(post);
         post=new Post ("Jerky Boys","2019-09-10","Do you play any musical instruments?","\n" +
-                "I play the piano and have been playing it since I was 4 years old! I also played the flute and violin for a short period of time and I also play a little bit of guitar. But I play the piano like a pro");
+                "I play the piano and have been playing it since I was 4 years old! I also played the flute and violin for a short period of time and I also play a little bit of guitar. But I play the piano like a pro.");
         postRepository.save(post);
 
     }
