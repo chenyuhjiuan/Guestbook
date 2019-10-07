@@ -5,6 +5,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.text.DateFormat;
 import java.util.Date;
 
 @Entity
@@ -16,21 +17,26 @@ public class Post {
     @Size(min=3)
     private String name;
 
-    @DateTimeFormat(pattern = "yyyy-mm-dd")
-    @Temporal(TemporalType.DATE)
-    private Date date;
+    /*@DateTimeFormat(pattern = "yyyy-mm-dd")
+    @Temporal(TemporalType.DATE)*/
     @NotNull
-    @Size(min=3,max=80)
+    /*@Size(min=8,max=8)*/
+    private String date;
+    @NotNull
+    @Size(min=3,max=150)
     private String subject;
+    @NotNull
 
-    @Size(min=10)
     private String wish;
     public Post() {
     }
 
-    public Post(@NotNull @Size(min = 3) String name, @NotNull @Size(min = 3, max = 80) String subject) {
+
+    public Post(@NotNull @Size(min = 3) String name, @NotNull @Size(min = 8, max = 8) String date, @NotNull @Size(min = 3, max = 80) String subject, @Size(min = 10) String wish) {
         this.name = name;
+        this.date = date;
         this.subject = subject;
+        this.wish = wish;
     }
 
     public long getId() {
@@ -49,11 +55,11 @@ public class Post {
         this.name = name;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

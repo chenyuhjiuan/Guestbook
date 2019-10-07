@@ -1,146 +1,156 @@
 
-body {
-    margin-top: 50px;
-}
 body{
-    background: #e6e6ff;
+    background: url("/images/orange.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.container {
-    margin-left: 300px;
-    margin-top: 30px;
-}
 .jumbotron {
     margin-left: 300px;
     margin-top: 30px;
-}
-/*.images{
-    margin-left: 300px;
-    margin-top: 30px;
-    height: 200px;
-    width: 1100px;
-}*/
-.nav-link{
-    font-size: 30px;
-
-}
-.pcss{
-    margin-left: 300px;
-    font-size: 22px;
-    width: 1100px;
-    color: black;
-}
-.pcss1{
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    width:1000px;
+    background-color: #ff8080;
+    padding-bottom: 2em;
+    background: linear-gradient(to right, #cccccc, #ff944d);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-li{
-    margin-right: 80px;
+.jumbotron h1 {
+
+    padding-top: .5em;
+    margin-left: 25px;
+    margin-bottom: 0.25em;
 }
 
-nav {
-    margin-left: 300px;
-    margin-right: 450px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    height: 80px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+
+
+/* the styles for the navigation bar */
+#nav_bar {margin-left: 300px;}
+
+
+#navmenu,#navmenu li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+
 }
-span{
-    color:saddlebrown;
+
+#navmenu li{
+    width:190px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+
 }
+
+#navmenu a{
+    text-decoration: none;
+    display: block;
+    width: 190px;
+    height: 60px;
+    line-height: 60px;
+    background-color:#A24545  ;
+    color: white ;
+    border-radius: 3px;
+    border: 1px solid #FFFFB2;
+    margin-bottom: 40px;
+
+}
+
+#navmenu li:hover > a{
+    background-color:#D68533;
+
+}
+
+#navmenu li:hover a:hover{
+
+    background-color:#ff8000;
+}
+
+#navmenu a.current { color: #ffff1a; }
 
 .row{
     box-shadow:  0 0 7px 5px #4B4B4B;
     margin: 15px auto;
 
     padding: 0;
-    background-color: pink;
+    background-color:  #ffd6cc;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-/*footer with social media icons*/
-*{
-    margin:0px;
-    padding: 0px;
-    box-siaing: border-box;
+/*table*/
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.1em;
+    min-width: 1100px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
+.content-table thead tr {
+    background-color: black;
+    color:#ffffff;
+    text-align: left;
+    font-width: bold;
+}
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #e69900;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid black;
+}
+/*form*/
+form{
+    width:600px;
+    padding: 18px;
+    margin:auto;
+    background:#ffd6cc;
+    font-size: 20px;
+    color:darkred;
+}
+input[type=text]{
+    width:100%;
+    padding:5px;
+    font-size: 15px;
+    color:gray;
+}
+textarea{
+    width:100%;
+    font-size: 16px;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: left;
+    padding: 20px;
+}
+
+
+
+
+/*footer*/
 .footer-main-div{
     width: 100%;
     height: auto;
-    /*margin: auto;*/
+    margin: auto;
     margin-bottom: 50px;
     background: #272727;
     padding: 30px 0px;
 
 }
-.footer-social-icons{
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-.footer-social-icons ul{
-    margin:0px;
-    padding: 0px;
-    text-align: center;
-}
-.footer-social-icons ul li{
-    display: inline-block;
-    width:50px;
-    height:50px;
-    font-size: larger;
-    margin:0px 10px;
-    border-radius:100% ;
-    background:#ffcccc;
-}
-.footer-social-icons ul li a{
-    color:#272727;
-    font-size: 25px;
-}
-.footer-social-icons ul li a i{
-    line-height:50px;
-}
-.oval {
-    width: 160px;
-    height: 80px;
-    background: #a84909;
-    border-radius: 50%;
-}
-/*section and aside for author.html*/
-section {
-    width: 645px;
-    padding-left: 20px;
-    padding-right: 20px;
-    float: left;
-}
-
-
-
-
-.pcss1{
-    margin-left: 100px;
-    font-size: 24px;
-    width: 600px;
-}
-/*paragraph content for each entry page*/
-
-.pcss2{
-    margin-left: 300px;
-    font-size: 24px;
-    width: 900px;
-}
-
-
-aside {
-    width: 350px;
-    float: left;
-    padding-left: 25px;
-    margin-left: 25px;
-}
-
-/* the styles for the footer */
 
 footer {
     clear: both;
@@ -153,7 +163,98 @@ footer p {
     margin-left: 25px;
     padding-bottom: 1em;
 }
+/*form input
 .inputp{
     margin-left: 40px;
     color:darkred;
+}*/
+/* default button */
+.btn-default {
+    background-color: #FFF;
+    color: #333;
+    border-color: #adadad;
+    border-radius: 20px;
 }
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active    {
+    background-color: #ebebeb;
+    color: #333;
+    border-color: #adadad;
+}
+
+/* primary button */
+.btn-primary {
+    background-color: #e6e6ff;
+    color: #285e8e;
+    border-color: #3276b1;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active    {
+    background-color: #3276b1;
+    color: #FFF;
+    border-color: #285e8e;
+}
+
+/* success button
+.btn-success {
+    background-color: #FFF;
+    color: #398439;
+    border-color: #47a447;
+    border-radius: 25px;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active    {
+    background-color: #47a447;
+    color: #FFF;
+    border-color: #398439;
+}*/
+
+/* info button
+.btn-info {
+    background-color: #FFF;
+    color: #269abc;
+    border-color: #39b3d7;
+    border-radius: 25px;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active    {
+    background-color: #39b3d7;
+    color: #FFF;
+    border-color: #269abc;
+}*/
+
+/* warning button
+.btn-warning {
+    background-color: #FFF;
+    color: #d58512;
+    border-color: #ed9c28;
+    border-radius: 25px;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active    {
+    background-color: #ed9c28;
+    color: #FFF;
+    border-color: #d58512;
+}*/
+
+/* danger button
+.btn-danger {
+    background-color: #FFF;
+    color: #ac2925;
+    border-color: #d2322d;
+    border-radius: 25px;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+    background-color: #d2322d;
+    color: #FFF;
+    border-color: #ac2925;
+}*/

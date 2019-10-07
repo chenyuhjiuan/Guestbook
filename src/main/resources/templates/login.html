@@ -2,42 +2,32 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head >
     <meta charset="UTF-8">
-    <title>Post List</title>
+    <title>Login</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Patua+One&display=swap" rel="stylesheet">
 
 </head>
 <body style="background-color: coral;">
-
-<div class="container" style="background-color: cornflowerblue;">
     <div class="jumbotron" >
-        <h1 style="ffont-family: 'Dancing Script', cursive;
+        <h1 style="font-family: 'Dancing Script', cursive;
 font-family: 'Patua One', cursive;">Welcome to Emily's Websit</h1>
         <h3 style="font-family: 'Dancing Script', cursive;color:darkred;">This is a fun place to post your information.</h3>
     </div>
 
-</div>
 
-
-
-
-<div style="margin-left: 300px; margin-top:50px;font-size: 20px;"><br/>
+    <div style="margin-left: 300px; margin-top:50px;font-size: 20px;"><br/>
 <form th:action="@{/loginprocess}" method="post">
-    <h2 style="color:darkred;">Please login with your name: </h2><input type="text" name="login"/>
+    <h2 >Please login with your name: </h2><br/>
+    <input style="height: 60px;" type="text" name="login"/>
     <br/><br/>
     <input type="submit" value="Submit" class="btn btn-primary btn-lg" role="button"/>
-
+<br/>
 </form>
-</div>
+</div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <footer>
     <div class="footer-main-div" style="margin-left: 300px; width: 1100px; height: 80px;">
         <p style="color:#ffcce6; ">&copy; Copyright 2019 Emily Marinovich.</p>

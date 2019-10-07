@@ -66,12 +66,12 @@ public class HomeController {
     }
 
     @RequestMapping("/update/{id}")
-    public String updateDish(@PathVariable("id") long id, Model model){
+    public String updatePost(@PathVariable("id") long id, Model model){
         model.addAttribute("post", postRepository.findById(id).get());
         return "postform";
     }
 
-    @RequestMapping("/delete/(id)")
+    @RequestMapping("/delete/{id}")
     public String delDish(@PathVariable("id") long id){
         postRepository.deleteById(id);
         return "redirect:/";
